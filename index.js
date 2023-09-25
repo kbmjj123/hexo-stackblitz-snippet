@@ -3,7 +3,7 @@
 hexo.extend.tag.register("stackblitz", (args) => {
   // 内置默认配置
   const default_config = {
-    style: "height: 256px; width: 100%;",
+    style: "height: 456px; width: 100%;",
     scrolling: "no",
     frameborder: "no",
     loading: "lazy",
