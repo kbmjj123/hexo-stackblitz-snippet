@@ -30,7 +30,7 @@ hexo.extend.tag.register("stackblitz", (args) => {
     allowfullscreen,
   } = config
   return `<iframe 
-              src="https://stackblitz.com/edit/${project}?ctl==${ctl}&hideExplorer=${hideExplorer}&hideNavigation=${hideNavigation}" 
+              src="https://stackblitz.com/edit/${project}" 
               style="${style}"
               scrolling=${scrolling} 
               frameborder=${frameborder} 
