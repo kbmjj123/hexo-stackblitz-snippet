@@ -24,5 +24,5 @@ hexo.extend.tag.register("stackblitz", (args) => {
   } = config
   return `<a href="https://stackblitz.com/edit/${project}"
     target="_blank" alt="${title}" style="${style}"
-  >${title}</a>`
+  >${title}<i class="fa fa-chevron-down" aria-hidden="true"></i></a>`
 })
