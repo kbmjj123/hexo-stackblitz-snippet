@@ -20,16 +20,9 @@ hexo.extend.tag.register("stackblitz", (args) => {
   const {
     project,
     style,
-    scrolling,
-    frameborder,
-    allowtransparency,
-    allowfullscreen,
+    title
   } = config
-  return `<iframe 
-              src="https://stackblitz.com/edit/${project}" 
-              style="${style}"
-              frameborder=${frameborder} 
-              sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-          >
-          </iframe>`
+  return `<a href="https://stackblitz.com/edit/${project}"
+    target="_blank" alt="${title}" style="${style}"
+  >${title}</a>`
 })
